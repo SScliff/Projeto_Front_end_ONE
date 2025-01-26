@@ -46,9 +46,7 @@ body{
 .apresentacao__link{
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
+    padding: 10px;
 }
 
 .apresentacao__link__subtitulo{
@@ -60,9 +58,11 @@ body{
 
 .apresentacao__link__link{
     /* background-color: #22D4FD; */
+    display: flex;
+    justify-content: center;
     border: 2px solid #22D4FD;
     width: 280px;
-    text-align: center;
+    align-items: center;
     border-radius: 16px;
     font-size: 24px;
     font-weight: 600;
@@ -70,6 +70,7 @@ body{
     text-decoration: none;
     color: #f6f6f6;
     font-family: 'Montserrat', sans-serif;
+    gap: 8px;
 }
 
 .imagem{
@@ -78,3 +79,11 @@ body{
     aspect-ratio: 1/1;
     
 }
+
+.coluna{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+}
+
