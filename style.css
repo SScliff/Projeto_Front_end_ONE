@@ -92,3 +92,16 @@ body {
   justify-content: center;
 }
 
+.apresentacao__link__link:hover{
+    background-color: #272727;
+}
+
+.rodape{
+    padding: 24px;
+    color: #000000;
+    background-color: #22d4fd;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
