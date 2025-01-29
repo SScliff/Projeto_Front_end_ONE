@@ -2,9 +2,9 @@
 
 :root {
   --cor-primaria: #048998;
-  --cor-secundaria: #F6F5F5;
+  --cor-secundaria: #f6f5f5;
   --cor-terciaria: #000000;
-  --cor-hover: #3BB4C1;
+  --cor-hover: #3bb4c1;
   --fonte-primaria: "Krona One", sans-serif;
   --fonte-secundaria: "Montserrat", sans-serif;
 }
@@ -16,7 +16,7 @@
 }
 
 body {
-  height: 100%;
+  box-sizing: border-box;
   background-color: var(--cor-primaria);
   color: var(--cor-secundaria);
   font-family: var(--fonte-secundaria), sans-serif;
@@ -29,7 +29,7 @@ body {
 }
 
 .header {
-  padding: 2% 0 0 15%;
+  padding: 2% 0% 0% 15%;
 }
 
 .menu {
@@ -38,9 +38,10 @@ body {
 }
 
 .menu__link {
-  font-size: 24px;
+  font-family: var(--fonte-secundaria);
+  font-size: 1.5rem;
   font-weight: 600;
-  color: var(--cor-secundaria);
+  color: var(--cor-terciaria);
   text-decoration: none;
 }
 
@@ -50,23 +51,24 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 5% 15%;
+  gap: 82px;
 }
 
 .content__info {
-  width: 650px;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 45px;
+  gap: 40px;
 }
 
 .content__title {
-  font-size: 36px;
   font-family: var(--fonte-primaria), sans-serif;
   text-align: justify;
+  font-size: 2.25rem;
 }
 
 .content__description {
-  font-size: 24px;
+  font-size: 1.5rem;
   text-align: justify;
 }
 
@@ -74,12 +76,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  justify-content: space-between;
+  gap: 32px;
 }
 
 .social__title {
   font-family: var(--fonte-primaria), sans-serif;
-  font-size: 24px;
+  font-size: 1, 5rem;
 }
 
 .social__container {
@@ -93,14 +96,15 @@ body {
   align-items: center;
   justify-content: center;
   border: 2px solid var(--cor-terciaria);
-  width: 280px;
-  border-radius: 16px;
-  font-size: 24px;
+  width: 378px;
+  border-radius: 8px;
+  font-size: 1.5rem;
   font-weight: 600;
   padding: 21.5px 0;
   text-decoration: none;
   color: var(--cor-secundaria);
-  gap: 8px;
+  gap: 16px;
+  font-family: var(--fonte-secundaria);
 }
 
 .social__link:hover {
@@ -108,9 +112,8 @@ body {
 }
 
 .content__image {
-  width: 600px;
+  width: 40%;
   border-radius: 16px;
-  aspect-ratio: 1 / 1;
 }
 
 .social__column {
@@ -127,5 +130,19 @@ body {
 
 .footer__text {
   color: var(--cor-primaria);
-  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 10%;
+  }
+  .menu {
+    justify-content: center;
+  }
+  .content {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
 }
