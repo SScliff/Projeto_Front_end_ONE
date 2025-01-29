@@ -145,4 +145,20 @@ body {
     flex-direction: column-reverse;
     padding: 5%;
   }
+  .content__info {
+    width: auto;
+  }
+  .content__title {
+    font-size: 1.25rem;
+  }
+  .content__description {
+    width: auto;
+  }
+  .social__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .social__column {
+    width: 100%;
+  }
 }
